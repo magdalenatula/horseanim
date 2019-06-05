@@ -1,0 +1,256 @@
+$navy_blue: #121F29;
+$gold: #D69B3A;
+$white: white;
+$headline: 'Slabo 27px', serif;
+$body_text: 'Raleway', sans-serif;
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $navy_blue;
+  height: 100vh;
+  width: 100vw;
+}
+
+///////////////////// First Page //////////////////////////////
+
+.main_headline {
+    opacity: 0;
+    font-size: 2.5em;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    font-family: $headline;
+    font-weight: 100;
+    top: 32vh;
+    left: 20%;
+    animation: headline 5s alternate forwards ease-in-out;
+    animation-delay: 2s;
+}
+
+@keyframes headline {
+     0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    
+    }
+      
+@mixin play_button {
+  color: $white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $gold;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: $body_text;
+  font-weight: 300;
+  border: none;
+  position: absolute;
+  top: 80vh;
+  left: 42%;
+  z-index: 10;
+}
+
+#logo {
+    animation: logo 2s alternate forwards;
+ }
+ 
+ @keyframes logo {
+ 0%{
+   transform: rotate(0deg), scale(8.0);
+   transform-origin: center;
+   transform-box: fill-box;}
+   
+5% {
+   transform: rotate(360deg);
+   transform-origin: center;
+   transform-box: fill-box;}
+
+6%{
+   transform: rotate(0deg);
+   transform-origin: center;
+   transform-box: fill-box;}
+
+100%{
+   transform: rotate(360deg) scale(1.0);
+   transform-origin: center;
+   transform-box: fill-box;}
+}
+
+.play_button {
+   @include play_button;}
+
+#svg_firstpage{
+  position: relative;}
+
+#horse1 {
+  opacity:0;
+  animation: horse1 5s forwards;
+  animation-delay: 3s; }
+
+@keyframes horse1 {
+     0% {
+         opacity: 0.1;
+     } 
+    100% {
+    opacity:1;
+    }
+}
+#person1 {
+  opacity:0;
+  animation: person1 5s forwards;
+  animation-delay: 3s; }
+
+@keyframes person1 {
+   0% {
+       opacity: 0.1;
+   } 
+  100% {
+  opacity:1;
+  }
+}
+#horse2 {
+    opacity:0;
+animation: horse2 5s forwards;
+animation-delay: 5s; }
+
+@keyframes horse2 {
+   0% {
+       opacity: 0.1;
+   } 
+  100% {
+  opacity:1;
+  }
+}
+#person2 {
+  opacity:0;
+animation: person2 5s forwards;
+animation-delay: 5s; }
+
+@keyframes person2 {
+ 0% {
+     opacity: 0.1;
+ } 
+100% {
+opacity:1;
+}
+}
+
+#horsline {
+path {
+    opacity:0;
+   fill: none;
+    stroke: $white;
+   animation: horseline 5s alternate forwards ease-in-out;
+   animation-delay: 2s;
+   stroke-miterlimit:5;
+   stroke-dasharray: 300;
+   stroke: $white;}
+   polygon {
+    opacity:0;
+    animation: horseline 5s alternate forwards ease-in-out;
+    animation-delay: 2s;
+    stroke-miterlimit:5;
+    stroke-dasharray: 300;
+    stroke: $white;}
+}
+@keyframes horseline {
+  0%  {
+    stroke-dashoffset: 300;
+    opacity: 0;
+}
+  100% {
+    stroke-dashoffset: 0;
+    opacity:1;}
+}
+.hide {
+  animation: hide 2s forwards ease-in-out;
+}
+@keyframes hide {
+  0%  {
+  opacity:1;
+  }
+  99% {
+  opacity:0;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+///////////////////// Second Page //////////////////////////////
+#clickHorse{
+  left: 50%;
+}
+#circle1 {
+    animation: click 3s infinite ease-in-out;
+  }
+
+@keyframes click {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#instructions{ 
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+}
+.white_part {
+  background-color: white;
+  height: 70vw;
+  text-align: center;
+} 
+@mixin title {
+  opacity: 0;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  font-family: $headline;
+  font-weight: 100;
+  // animation: title 5s alternate forwards ease-in-out;
+  // animation-delay: 2s;
+}
+
+.title {
+  @include title;
+}
+
+#arrows {
+  animation: arrows 3s infinite;
+}
+@keyframes arrows {
+  0%{
+    transform: rotate(0deg), scale(8.0);
+    transform-origin: center;
+    transform-box: fill-box;}
+    
+ 5% {
+    transform: rotate(360deg);
+    transform-origin: center;
+    transform-box: fill-box;}
+ 
+ 6%{
+    transform: rotate(0deg);
+    transform-origin: center;
+    transform-box: fill-box;}
+ 
+ 100%{
+    transform: rotate(360deg) scale(1.0);
+    transform-origin: center;
+    transform-box: fill-box;}
+ }

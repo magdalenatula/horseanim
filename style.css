@@ -1,0 +1,311 @@
+.main_headline {
+  opacity: 0;
+  font-size: 2.5em;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  font-family: "Slabo 27px", serif;
+  font-weight: 100;
+  top: 32vh;
+  left: 32%;
+  -webkit-animation: headline 5s alternate forwards;
+          animation: headline 5s alternate forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes headline {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes headline {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #121F29;
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo {
+  -webkit-animation: logo 2s alternate forwards;
+          animation: logo 2s alternate forwards;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: rotate(0deg), scale(8);
+            transform: rotate(0deg), scale(8);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  6% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: rotate(0deg), scale(8);
+            transform: rotate(0deg), scale(8);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  5% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  6% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+.play_button {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #D69B3A;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  border: none;
+  position: absolute;
+  top: 80vh;
+  left: 42%;
+  z-index: 10;
+}
+
+#svg_firstpage {
+  position: relative;
+}
+
+#horse1 {
+  opacity: 0;
+  -webkit-animation: horse1 5s forwards;
+          animation: horse1 5s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes horse1 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes horse1 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#person1 {
+  opacity: 0;
+  -webkit-animation: person1 5s forwards;
+          animation: person1 5s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes person1 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes person1 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#horse2 {
+  opacity: 0;
+  -webkit-animation: horse2 5s forwards;
+          animation: horse2 5s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes horse2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes horse2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#person2 {
+  opacity: 0;
+  -webkit-animation: person2 5s forwards;
+          animation: person2 5s forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes person2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes person2 {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#horseline path {
+  opacity: 0;
+  fill: none;
+  stroke: white;
+  -webkit-animation: horseline 5s alternate forwards;
+          animation: horseline 5s alternate forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  stroke-miterlimit: 5;
+  stroke-dasharray: 300;
+  stroke: white;
+}
+
+#horseline polygon {
+  opacity: 0;
+  -webkit-animation: horseline 5s alternate forwards;
+          animation: horseline 5s alternate forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  stroke-miterlimit: 5;
+  stroke-dasharray: 300;
+  stroke: white;
+}
+
+@-webkit-keyframes horseline {
+  0% {
+    stroke-dashoffset: 300;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes horseline {
+  0% {
+    stroke-dashoffset: 300;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.hide {
+  -webkit-animation: hide 2s forwards;
+          animation: hide 2s forwards;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
